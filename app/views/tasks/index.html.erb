@@ -1,0 +1,23 @@
+<div class="container ">
+  <h1> My Personal Task Manager </h1>
+  <h3> Here is the list of my tasks </h3>
+
+  <!-- display all tasks -->
+
+    <ul >
+      <% @tasks.each do |task| %>
+        <li class="name"><%= link_to task.name, task_path(task) %></li>
+        <li class="edit btn btn-primary"><%= link_to "Edit", edit_task_path(task) %></li>
+        <li class="delete btn btn-primary"><%= link_to "Delete", task_path(task),
+          method: :delete,
+          data: { confirm: "Are you sure?" } %></li>
+      <% end %>
+    </ul>
+
+    <h2>Create a new task</h2>
+    <p class="create btn btn-primary"><%= link_to "Create", new_task_path(@tasks) %> </p>
+    </div>
+<!-- link to its creation process -->
+<!-- link to its show view -->
+<!-- a link to its edit view -->
+<!-- link to its delete action -->

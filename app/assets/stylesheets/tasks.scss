@@ -1,0 +1,32 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+li {
+  color: white;
+
+}
+
+.name {
+  font-size: 25px;
+  font-weight: medium;
+}
+
+a {
+  color: #205162;
+}
+
+.delete a {
+  color: white;
+}
+
+.edit a {
+  color: white;
+}
+
+.create a {
+  color: white;
+}
+
+.show {
+  color: white;
+}
